@@ -1,2 +1,2 @@
-let sName:string = "Zain"
-console.log(`Hello ${sName}, would you like to learn some Python today?`);
+let sName:string = "Shahbaz";
+console.log(`Hello ${sName}, would you like to learn some TypeScript today?`);
