@@ -1,3 +1,4 @@
-var stName = "  Shahbaz \n\t Akbar  ";
+"use strict";
+let stName = "  Shahbaz \n\t Akbar  ";
 console.log(stName);
 console.log(stName.replace(/\s/g, ""));
