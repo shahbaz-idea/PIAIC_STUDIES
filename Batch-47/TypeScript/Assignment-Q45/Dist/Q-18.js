@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const lstFavPlaces = ["Paris", "Switzerland", "New Zeeland", "Istanbul", "London"];
 //console.log(lstFavPlaces);
 console.log("Original Order");
