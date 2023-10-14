@@ -1,22 +1,38 @@
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
     {
-        type: "input",
-        name: "name",
-        message: "What is your name?"
+        type: "number",
+        name: "num1",
+        message: "Enter the first number : "
     },
     {
         type: "number",
-        name: "age",
-        message: "What is your age?"
+        name: "num2",
+        message: "Enter the second number : "
     },
     {
         type: "list",
-        name: "gender",
-        message: "What is your gender?",
-        choices: ["Male", "Female"]
+        name: "operation",
+        message: "Selec the operation you want to perform : ",
+        choices: ["Add", "Subtract", "Multiply", "Divide"]
     }
 ]);
-console.log("Your Name is " + answer.name);
-console.log("Your Age is " + answer.age);
-console.log("Your Gender is " + answer.gender);
+let result;
+switch (answer.operation) {
+    case 'Add':
+        result = answer.num1 + answer.num2;
+        console.log("Addition of two number is : " + result);
+        break;
+    case 'Subtract':
+        result = answer.num1 - answer.num2;
+        console.log("Subtraction of two number is : " + result);
+        break;
+    case 'Multiply':
+        result = answer.num1 * answer.num2;
+        console.log("Multiplication of two number is : " + result);
+        break;
+    case 'Divide':
+        result = answer.num1 / answer.num2;
+        console.log("Division of two number is : " + result);
+        break;
+}
