@@ -1,0 +1,9 @@
+Type Script Projects Command.
+
+
+tsc --init					create tsconfig.json
+npm init -y					create package.json
+npm i --save-dev @types/node			add node library like "readline"
+npm i inquirer
+npm i @types/inquirer -D
+npm install --save inquirer
