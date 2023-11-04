@@ -1,0 +1,10 @@
+
+git pull origin
+git push origin
+git commit -a -m "comment"
+git add .
+git status
+git push origin main
+git push -u origin main
+git clone https://github.com/shahbaz-idea/PIAIC.git
+git remote add origin https://github.com/shahbaz-idea/PIAIC.git
