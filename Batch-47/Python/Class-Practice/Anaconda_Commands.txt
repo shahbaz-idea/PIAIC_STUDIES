@@ -1,0 +1,7 @@
+Create environment 
+
+conda create -n PythonConda12 python=3.12 -y
+
+To activate environment
+
+conda activate PythonConda12

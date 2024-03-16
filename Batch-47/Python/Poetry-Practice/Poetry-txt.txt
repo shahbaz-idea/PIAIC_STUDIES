@@ -1,0 +1,1 @@
+Creating virtualenv class01-02XfXnqZ-py3.12 in C:\Users\shahb\AppData\Local\pypoetry\Cache\virtualenvs
