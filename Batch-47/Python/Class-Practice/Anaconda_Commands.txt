@@ -5,3 +5,7 @@ conda create -n PythonConda12 python=3.12 -y
 To activate environment
 
 conda activate PythonConda12
+
+To Install package from file
+
+pip install -r filename.txt
