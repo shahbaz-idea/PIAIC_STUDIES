@@ -9,3 +9,7 @@ conda activate PythonConda12
 To Install package from file
 
 pip install -r filename.txt
+
+To Conda Deactivate for poetry
+
+conda deactivate

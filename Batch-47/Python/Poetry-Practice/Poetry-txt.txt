@@ -1,1 +1,10 @@
+https://www.youtube.com/watch?v=g9u-H628jXg&t=3341s
+Poerty --version
+poetry run python --version
+poetry new project_youtube
+
+create project then into project_youtube folder then run
+poetry run python --version	to create virtual environment
+
+
 Creating virtualenv class01-02XfXnqZ-py3.12 in C:\Users\shahb\AppData\Local\pypoetry\Cache\virtualenvs
