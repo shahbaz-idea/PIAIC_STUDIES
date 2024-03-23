@@ -6,5 +6,21 @@ poetry new project_youtube
 create project then into project_youtube folder then run
 poetry run python --version	to create virtual environment
 
+To add new requests package in tomal file
+poetry add requests
+
+To run py project file
+poetry run python project_youtube/main.py
+
+To add new pytest package in tomal file
+poetry add pytest
+
+to run project
+poetry run pytest
+
+to view statuses of functions
+poetry run pytest -v
+
+https://realpython.com/dependency-management-python-poetry/
 
 Creating virtualenv class01-02XfXnqZ-py3.12 in C:\Users\shahb\AppData\Local\pypoetry\Cache\virtualenvs
