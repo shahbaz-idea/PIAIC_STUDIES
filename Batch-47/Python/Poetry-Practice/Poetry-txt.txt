@@ -24,3 +24,14 @@ poetry run pytest -v
 https://realpython.com/dependency-management-python-poetry/
 
 Creating virtualenv class01-02XfXnqZ-py3.12 in C:\Users\shahb\AppData\Local\pypoetry\Cache\virtualenvs
+
+https://www.youtube.com/watch?v=Y_eRMGaTMo4
+
+poetry new todo-server --name app
+cd todo-server
+code .
+poetry add fastapi uvicorn
+poetry run uvicorn app.main:todo_Server --reload
+
+poetry add sqlmodel
+poetry add "psycopg[binary]"

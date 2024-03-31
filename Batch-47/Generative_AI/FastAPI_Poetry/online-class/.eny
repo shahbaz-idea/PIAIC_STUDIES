@@ -1,0 +1,9 @@
+# .env
+# Don't commit this to source control
+# Eg. Include ".env" in your `.gitignore` file.
+
+# This is the connection string for the main branch of Neon Database URL
+DATABASE_URL=postgresql://GenAI-DB_owner:************@ep-nameless-water-a5vs65wd.us-east-2.aws.neon.tech/GenAI-DB?sslmode=require
+
+# This is the connection string for the test branch of Neon Database URL
+TEST_DATABASE_URL=postgresql://GenAI-DB_owner:************@ep-nameless-water-a5vs65wd.us-east-2.aws.neon.tech/online-class?sslmode=require
