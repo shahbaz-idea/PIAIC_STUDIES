@@ -1,11 +1,12 @@
 from fastapi import FastAPI
-from sqlmodel import SQLModel, Field, create_engine, Session
+from sqlmodel import SQLModel, Field, create_engine, update, Session
 from contextlib import asynccontextmanager
 from app import settings
 
 class Todo(SQLModel, table=True):
     id: int | None = Field(default=None, primary_key=True)
     title: str
+    Description: str
 
 conn_str: str = str(settings.DB_URL).replace("postgresql","postgresql+psycopg")
 engine = create_engine(conn_str)
@@ -15,8 +16,14 @@ def create_db_tables():
     SQLModel.metadata.create_all(engine)
     print("Tables Created")
 
+def drop_db_tables():
+    print("Drop DB Tables")
+    SQLModel.metadata.drop_all(engine)
+    print("Tables Deleted")
+
 @asynccontextmanager
 async def lifespan(todo_Server: FastAPI):
+    # drop_db_tables()
     print("Server Startup")
     create_db_tables()
     yield
